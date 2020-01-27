@@ -1,7 +1,7 @@
 /* Element styling */
 html{
     height: 100%;
-    font-family: monospace;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     color: black;
 }
 
@@ -11,9 +11,13 @@ body{
 }
 
 header{
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    max-width: 950px;
+    font-size: xx-large;
+    display: flex;
+    justify-content: left;
+    background: transparent;
+    padding: 0 1em;
 }
 
 h3{
@@ -41,15 +45,10 @@ section{
 }
 
 ul{
+    display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li{
-    color: gray;
-    padding: 10px 0 10px 0;
     margin: auto;
+    padding: 0;
 }
 
 a{
@@ -74,25 +73,49 @@ button{
 
 /* Class styling */
 
-.block{
-    background-image: white;
-    padding: 10px;
-    margin: 5px;
-    border-top: 25px solid rgba(11, 79, 108, 1);
-    vertical-align: middle;
-    flex: 1;
-}
-
-.ul-spread{
-    display: flex;
-    padding: 0;
-    flex: 1;
-}
-
 .li-icon{
-    display: block;
-    padding: 10px 0 10px 0;
+    padding: 2em;
     margin: auto;
+}
+
+.content-section{
+    background: transparent;
+    min-height: 50vh;
+}
+
+.content-wrapper{
+    margin: auto;
+    max-width: 950px;
+    background: transparent;
+    padding: 0 2em;
+    display: flex;
+}
+
+.content-holder{
+    background-image: linear-gradient(bottom, white, grey);
+}
+
+.content-image-centered{
+    margin: auto;
+}
+
+.content-ul{
+    display: flex;
+    margin: auto;
+}
+
+.content-wrapper div{
+    background: transparent;
+    padding: 1em;
+    margin: 1em;
+    flex: 2;
+}
+
+.section-paragraph{
+    font-size: 21px;
+    line-height: 1.38105;
+    font-weight: 400;
+    letter-spacing: .011em;
 }
 
 /* Id styling */
@@ -108,10 +131,6 @@ button{
     flex: 0.5;
 }
 
-#inline-accent{
-    color: rgba(134, 203, 146, 1);
-}
-
 #projects{
     flex: 1.5;
 }
@@ -121,20 +140,4 @@ button{
     color: grey;
     text-align: center;
     width: 100%;
-}
-
-#title{
-    margin: 5%;
-    font-size: xx-large;
-    display: flex;
-    justify-content: left;
-}
-
-#content-wrapper{
-    background-attachment: scroll;
-}
-
-#filler{
-    border: none;
-    top: 50%;
 }
