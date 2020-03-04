@@ -15,6 +15,21 @@
 
 /* Media */
 @media only screen and (max-width: 600px){
+    main{
+        margin-left: 0;
+    }
+
+    section{
+        padding: 1rem;
+    }
+    
+    .div-intro{
+        position: relative;
+        margin-top: 25%;
+        padding: 1rem;
+
+    }
+    
     .toolbar{
         bottom: 0;
         width: 100vw;
@@ -22,15 +37,16 @@
     }
 
     .toolbar-tools{
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
     }
 
     .item-link{
         justify-content: center;
     }
 
-    main{
-        margin-left: 0;
+    .section-content{
+        margin-bottom: 5rem;
     }
 }
 
@@ -42,12 +58,26 @@
         height: 100vh;
     }
 
+    .toolbar-tools{
+        display: flex;
+        flex-direction: column;
+    }
+
     .toolbar:hover{
         width: 5rem;
     }
 
     .toolbar:hover .link-text{
         display: block;
+    }
+
+    .div-intro{
+        padding: 12rem;
+    }
+
+    .section-content div{
+        padding: 2rem 0;
+        max-width: 50%;
     }
 }
    
@@ -85,14 +115,14 @@ section{
     background-size: cover;
 }
 
-.section-skills{
-    padding: 6rem;
+.section-content{
+    padding: 2rem;
+    height: 100%;
     color: black;
-}
-
-.div-intro{
-    padding: 6rem;
-    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .div-intro h1{
@@ -102,17 +132,11 @@ section{
     font-weight: 1;
 }
 
-.div-intro p{
-    width: 50px;
-}
-
 .skills{
-    width: 100%;
-    text-align: left;
-}
-
-table td{
-    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Toolbar */
@@ -127,20 +151,17 @@ table td{
     background-color: rgba(255,255,255, 0.2);
 }
 
-.toolbar:hover .link-text{
-}
-
 .toolbar-tools{
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .tool-item{
     width: 100%;
+    background-color: rgba(255,255,255, 0.2);
 }
 
 .tool-item:last-child{
@@ -170,7 +191,6 @@ table td{
 .item-link:hover{
     filter: grayscale(0%) opacity(1);
     background: #171717;
-    color: #18A999
 }
 
 .fa-linkedin .fa-github .fa-paper-plane{
