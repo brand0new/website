@@ -10,7 +10,6 @@
     --bg-primary: #000505;
     --bg-secondary: #171717;
     --transition-speed: 300ms;
-
 }
 
 /* Media */
@@ -48,6 +47,10 @@
     .section-content{
         margin-bottom: 5rem;
     }
+
+    .skills{
+        flex-direction: row;
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -78,6 +81,10 @@
     .section-content div{
         padding: 2rem 0;
         max-width: 50%;
+    }
+
+    .skills{
+        flex-direction: row;
     }
 }
    
@@ -134,9 +141,12 @@ section{
 
 .skills{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.skills div{
+    margin: 0 3rem;
 }
 
 /* Toolbar */
