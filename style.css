@@ -179,6 +179,15 @@ main{
     color: var(--text-secondary) ;
 }
 
+/* apps */
+.app-title{
+    font-size: 60px;
+}
+
+.sudoku{
+    display: flex;
+}
+
 /* toolbar */
 .toolbar{
     position: fixed;
